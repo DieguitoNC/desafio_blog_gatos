@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+
+  --Brand-Colors-Explorer-dark: #065E7C;
+  --logo-nav-color: #F4FCFF;
+}
+  
+
+body {
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  gap: 2.5rem;
+  padding: 1.2rem 2.8rem;
+
+  background-color: var(--Brand-Colors-Explorer-dark);
+
+  height: 7.2rem;
+}
+
+nav img {
+  border-radius: 100rem;
+}
+
+nav div img {
+  background-color: var(--logo-nav-color);
+  padding: 0.8rem;
+}
+
+main {
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 100px;
+}
