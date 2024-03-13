@@ -9,9 +9,13 @@
 :root {
   font-size: 62.5%;
   font-family: "Mulish", sans-serif;
+  color: var(--color-all-text);
 
   --Brand-Colors-Explorer-dark: #065E7C;
   --logo-nav-color: #F4FCFF;
+  --nav-color-form-input: #387E96;
+  --color-heading-text: #202024;
+  --color-all-text:#121214;
 }
   
 
@@ -19,15 +23,19 @@ body {
   font-size: 1.6rem;
 }
 
+
+
+
 nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   gap: 2.5rem;
   padding: 1.2rem 2.8rem;
 
   background-color: var(--Brand-Colors-Explorer-dark);
-
+  
   height: 7.2rem;
 }
 
@@ -35,15 +43,117 @@ nav img {
   border-radius: 100rem;
 }
 
-nav div img {
-  background-color: var(--logo-nav-color);
-  padding: 0.8rem;
+header nav img {
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
+.img-logo {
+  background-color: var(--logo-nav-color);
+  display: flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.8rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100rem;
+}
+.img-logo img {
+  width: 2.4rem;
+  height: 2rem;
+}
+
+
+
+
+
+h1,h2,h3 {
+  color: var(--color-heading-text);
+}
+
+img,
+main img,
+aside figure img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.input-wrapper label {
+  
+  width: 1px;
+  
+  height: 1px;
+  
+  overflow: hidden;
+  
+  position: absolute;
+  
+}
+
+.input-wrapper input {
+  display: flex;
+  padding: 1.2rem 1.4rem;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 0.4rem;
+  
+  background-color: var(--nav-color-form-input);
+  border: none;
+  
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+
+/* MAIN */ 
+
 main {
+  padding: 0 2.2rem;
   overflow-y: scroll;
 }
 
-img {
-  max-width: 100px;
+main .img-main{
+  width: 100%;
+}
+
+main h1 {
+  margin-top: 3.2rem;
+  color: var(--Platform-Aliases-Shape-principal, #202024);
+  
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+main .space-to-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+main button {
+background-color:var(--Brand-Colors-Explorer-dark) ;
+border: none;
+
+display: flex;
+padding: 1.2rem;
+justify-content: center;
+align-items: center;
+
+border-radius: 100rem;
+}
+
+main button img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+
+aside {
+  margin: 0 2.4rem;
 }
