@@ -220,3 +220,64 @@ footer {
   background-color: var(--nav-color-form-input);
   color: white;
 }
+
+@media (min-width: 700px) {
+  .app {
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "img sidebar"
+    "main sidebar"
+    "footer footer";
+
+    height: 100vh;
+
+  }
+
+
+  .app header {
+    grid-area: header;
+  }
+
+  main .h1-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 300px;
+    
+  }
+
+  
+  .app main {
+    grid-area: main;
+    padding: 0 11.2rem;
+  }
+
+  .app main {
+    min-width: 80rem ;
+  }
+  .app .img-main {
+    grid-area: img;
+
+    display: block;
+    margin-top: 4.4rem;
+    margin-left:11.2rem;
+    margin-right: 3.4rem;
+    max-height: 40rem;
+    max-width: 80rem;
+
+    border-radius: 0.5rem;
+
+  }
+  .app aside {
+    grid-area: sidebar;
+    min-width: 38.4rem;
+  }
+  aside figure img {
+    height: 8.4rem;
+  }
+  .app footer {
+    grid-area: footer;
+  }
+
+}
